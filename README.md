@@ -1,0 +1,2 @@
+# AngulrajsAndSpringAndSpringMVCAndMybatic
+Angularjs联合Spring、SpringMVC、Mybatic框架整合创建MAVEN WEB项目tomcat8.5部署，采用json格式传输据，使用Mysql数据库，工程文件包括MAVEN，Mysql数据库以及mysql可视化操作工具，SQLyog，MAVEN初次使用时需要配置环境变量以及在eclips中配置
