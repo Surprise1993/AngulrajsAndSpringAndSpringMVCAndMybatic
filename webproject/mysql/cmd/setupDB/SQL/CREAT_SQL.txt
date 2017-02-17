@@ -1,0 +1,110 @@
+
+CREATE TABLE DEPT_TBL (
+	DEPT_CODE       VARCHAR(4) DEFAULT '' NOT NULL PRIMARY KEY,
+	DEPT_NAME    VARCHAR(50) DEFAULT '' NOT NULL,
+	DEPT_PROJECT  VARCHAR(100) DEFAULT '' NOT NULL,
+	EMAIL_LIST   VARCHAR(50) DEFAULT '' ,
+	DEPT_ABB     VARCHAR(50) DEFAULT '' ,
+	DEPT_HEAD    VARCHAR(50) DEFAULT '' ,
+	DEPT_INTRO   VARCHAR(50) DEFAULT ''
+);
+COMMIT;
+
+CREATE TABLE DEPT_DETAIL_TBL (
+	DEPT_DETAIL_CODE       VARCHAR(4) DEFAULT '' NOT NULL PRIMARY KEY,
+    DEPT_CODE  VARCHAR(4) DEFAULT '' NOT NULL,
+	DEPT_DETAIL_NAME    VARCHAR(50) DEFAULT '' NOT NULL,
+	EMAIL_LIST   VARCHAR(50) DEFAULT '' ,
+	DEPT_ABB     VARCHAR(50) DEFAULT '' ,
+	DEPT_HEAD    VARCHAR(50) DEFAULT '' ,
+	DEPT_INTRO   VARCHAR(50) DEFAULT '' 
+);
+COMMIT;
+
+CREATE TABLE USER_TBL (
+	USER_CODE       VARCHAR(5) DEFAULT '' NOT NULL PRIMARY KEY,
+	USER_NAME    VARCHAR(50) DEFAULT '' NOT NULL,
+	USER_PWD  VARCHAR(16) DEFAULT '' NOT NULL,
+	USER_SEX    VARCHAR(1) DEFAULT '' NOT NULL,
+    DEPT_CODE   VARCHAR(4) DEFAULT '' NOT NULL,
+	USER_STATUSINFOR   VARCHAR(1) DEFAULT '' NOT NULL,
+	USER_EMAIL  VARCHAR(50) DEFAULT '' NOT NULL,
+	USER_POSITION VARCHAR(1) DEFAULT '' NOT NULL,
+	USER_LEVEL VARCHAR(2) DEFAULT '' NOT NULL
+);
+COMMIT;
+
+CREATE TABLE WORK_DAILY_TBL (
+	WORK_DAILY_ID       VARCHAR(15) DEFAULT '' NOT NULL PRIMARY KEY,
+	USER_CODE    VARCHAR(5) DEFAULT '' NOT NULL,
+	DEPT_CODE  VARCHAR(4) DEFAULT '' NOT NULL,
+	DAILY_DATE    DATE  NOT NULL,
+        DAILY_SUBMIT_DATE    DATE  NOT NULL,
+	DAILY_CONFIRM_STATE  VARCHAR(2) DEFAULT '' NOT NULL,
+	DAILY_CONFIRM_PEOPLE    VARCHAR(50) DEFAULT '' NOT NULL,
+        DAILY_CONFIRM_DATE    DATE  NULL,
+        CONSTRAINT FK_USER_DAILY FOREIGN KEY(USER_CODE) REFERENCES USER_TBL(USER_CODE)
+);
+COMMIT;
+
+CREATE TABLE WORK_DAILY_DETAIL_TBL (
+	WORK_DAILY_DETAIL_ID       VARCHAR(15) DEFAULT '' NOT NULL PRIMARY KEY,
+	WORK_DAILY_ID    VARCHAR(13) DEFAULT '' NOT NULL,
+	PROJECT_ID  VARCHAR(6) DEFAULT '' NOT NULL,
+	WORK_PROPERTY    VARCHAR(2) DEFAULT '' NOT NULL,
+    WORK_ROLE    VARCHAR(2) DEFAULT '' NOT NULL,
+	WORK_TIME  VARCHAR(2) DEFAULT '' NOT NULL,
+	OVERTIME_START_TIME    VARCHAR(5) DEFAULT '' NOT NULL,
+    WORK_DAILY_EXPLAIN    VARCHAR(200) DEFAULT '' NOT NULL,
+    CONSTRAINT FK_DAILY_DAILY_DETAIL FOREIGN KEY(WORK_DAILY_ID) REFERENCES WORK_DAILY_TBL(WORK_DAILY_ID)
+);
+COMMIT;
+
+CREATE TABLE PROJECT_QUERY_TBL (
+	proj_id int NOT NULL PRIMARY KEY,
+	proj_number varchar(50) DEFAULT '' NOT NULL,
+	proj_name varchar(100) DEFAULT '' NOT NULL,
+	proj_state char(1) DEFAULT '' NOT NULL,
+	proj_business_bear varchar(50) DEFAULT '',
+	proj_bear varchar(50) DEFAULT '' NOT NULL,
+	proj_iso_bear varchar(50) DEFAULT '',
+	proj_content varchar(200) DEFAULT '' NOT NULL,
+	proj_scale varchar(50) DEFAULT '',
+	proj_operating_system varchar(50) DEFAULT '' NOT NULL,
+	proj_development_tool varchar(100) DEFAULT '' NOT NULL,
+	proj_start_date date NOT NULL,
+	proj_expected_end_date date NOT NULL,
+	proj_end_date date NOT NULL,
+	proj_start_notice varchar(20) NOT NULL, 
+	proj_interrupt_notice varchar(20) NOT NULL,
+	proj_resume_notice varchar(20) NOT NULL,
+	proj_end_notice varchar(20) NOT NULL,
+	proj_contract_number varchar(20) NOT NULL,
+	proj_cd_r_number varchar(20) DEFAULT '' NOT NULL,
+	proj_submitted_status varchar(10) DEFAULT '' NOT NULL,
+	proj_start_file_number varchar(50) DEFAULT '',
+	proj_customer_name varchar(100) DEFAULT '',
+	proj_cunstomer_charge varchar(50) DEFAULT '',
+	proj_cunstomer_tel varchar(20) DEFAULT '',
+	proj_cunstomer_fax varchar(20) DEFAULT '',
+	proj_cunstomer_mail varchar(50) DEFAULT '',
+	proj_submitted_department varchar(50) DEFAULT '',
+	proj_information_inputer varchar(20) DEFAULT '',
+	proj_information_input_date date,
+	proj_sender_confirm varchar(20) DEFAULT '',
+	proj_receive_department varchar(50) DEFAULT '',
+	proj_receive_date date,
+	proj_type varchar(20) DEFAULT '',
+	proj_contract_name varchar(50) DEFAULT '',
+	proj_remarks varchar(200) DEFAULT '',
+	proj_attribute char(2) DEFAULT '',
+	proj_distinguish char(2) DEFAULT '',
+	his_proj_receive_department varchar(50) DEFAULT '',
+	proj_keyword varchar(100) DEFAULT '',
+	proj_database varchar(100) DEFAULT '',
+	proj_business_type varchar(2) DEFAULT '',
+	proj_service_class varchar(2) DEFAULT '',
+	proj_work_mode varchar(3) DEFAULT '',
+	proj_defi varchar(8) DEFAULT ''
+);
+COMMIT;

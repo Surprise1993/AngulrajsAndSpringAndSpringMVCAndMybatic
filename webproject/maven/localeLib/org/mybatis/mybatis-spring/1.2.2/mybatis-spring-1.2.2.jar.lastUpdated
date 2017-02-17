@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Mon Jan 23 16:27:40 JST 2017
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1485156460154
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.mybatis\:mybatis-spring\:jar\:1.2.2 from/to central (https\://repo.maven.apache.org/maven2)\: The operation was cancelled.

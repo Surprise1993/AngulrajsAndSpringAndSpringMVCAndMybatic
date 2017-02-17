@@ -1,0 +1,76 @@
+﻿insert into `dept_tbl` (`DEPT_CODE`, `DEPT_NAME`, `DEPT_PROJECT`, `DEPT_ABB`, `DEPT_HEAD`, `DEPT_INTRO`) values('0001','00EIS','C11021,C16006,D04001,D08013,Z16N01',NULL,NULL,NULL);
+insert into `dept_tbl` (`DEPT_CODE`, `DEPT_NAME`, `DEPT_PROJECT`, `DEPT_ABB`, `DEPT_HEAD`, `DEPT_INTRO`) values('0002','00SDS','P15007,P16005,P16009,P16012,P16015,Z16N02',NULL,NULL,NULL);
+insert into `dept_tbl` (`DEPT_CODE`, `DEPT_NAME`, `DEPT_PROJECT`, `DEPT_ABB`, `DEPT_HEAD`, `DEPT_INTRO`) values('0003','中国区マーケティング部','','','','');
+insert into `dept_tbl` (`DEPT_CODE`, `DEPT_NAME`, `DEPT_PROJECT`, `DEPT_ABB`, `DEPT_HEAD`, `DEPT_INTRO`) values('0004','IT技術革新推進事業部','','','','');
+insert into `dept_tbl` (`DEPT_CODE`, `DEPT_NAME`, `DEPT_PROJECT`, `DEPT_ABB`, `DEPT_HEAD`, `DEPT_INTRO`) values('0005','解決方案事業部','','','','');
+insert into `dept_tbl` (`DEPT_CODE`, `DEPT_NAME`, `DEPT_PROJECT`, `DEPT_ABB`, `DEPT_HEAD`, `DEPT_INTRO`) values('0006','企業ITサービス事業部','','','','');
+insert into `dept_tbl` (`DEPT_CODE`, `DEPT_NAME`, `DEPT_PROJECT`, `DEPT_ABB`, `DEPT_HEAD`, `DEPT_INTRO`) values('0007','システム開発事業部','','','','');
+insert into `dept_tbl` (`DEPT_CODE`, `DEPT_NAME`, `DEPT_PROJECT`, `DEPT_ABB`, `DEPT_HEAD`, `DEPT_INTRO`) values('0008',' 管理本部','','','','');
+insert into `dept_tbl` (`DEPT_CODE`, `DEPT_NAME`, `DEPT_PROJECT`, `DEPT_ABB`, `DEPT_HEAD`, `DEPT_INTRO`) values('0009','済南大宇宙情報は有限会社を創造して','','','','');
+insert into `dept_tbl` (`DEPT_CODE`, `DEPT_NAME`, `DEPT_PROJECT`, `DEPT_ABB`, `DEPT_HEAD`, `DEPT_INTRO`) values('0010','暇海購入事業部','','','','');
+insert into `dept_tbl` (`DEPT_CODE`, `DEPT_NAME`, `DEPT_PROJECT`, `DEPT_ABB`, `DEPT_HEAD`, `DEPT_INTRO`) values('0011','蘇州大宇宙情報創造有限会社','','','','');
+
+COMMIT;
+
+
+
+INSERT INTO DEPT_DETAIL_TBL VALUES('0012','0003','SALES _マーケティングいち部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0013','0003','SALES _マーケティングに部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0014','0003','SALES _企画部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0015','0003','B 2 Cスタジオ','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0016','0004','ITPS _研究開発部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0017','0004','ITPS_ITベース構築部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0018','0005','WE _事業企画運営部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0019','0006','EIS _広州深セン支社','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0020','0006','EIS _システーション部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0021','0006','EIS_IT運用サポート部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0022','0006','SI _事業推進部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0023','0007','SDS_WE / EC開発部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0024','0007','SDS _産業システム開発部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0025','0007','SDS _金融システム開発部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0026','0008','MA _行政サービス部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0027','0008','MA _業務監査部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0028','0008','MA _財務部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0029','0008','MA _人的資源部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0030','0009','JN _管理部','','','','');
+INSERT INTO DEPT_DETAIL_TBL VALUES('0031','0009','JN _技術開発部','','','','');
+COMMIT;
+
+
+insert into `user_tbl` (`USER_CODE`, `USER_NAME`, `USER_PWD`, `USER_SEX`, `DEPT_CODE`, `USER_STATUSINFOR`, `USER_EMAIL`, `USER_POSITION`, `USER_LEVEL`) values('1024','野村四郎','123','0','0002','0','939940939@qq.com','3','1');
+insert into `user_tbl` (`USER_CODE`, `USER_NAME`, `USER_PWD`, `USER_SEX`, `DEPT_CODE`, `USER_STATUSINFOR`, `USER_EMAIL`, `USER_POSITION`, `USER_LEVEL`) values('2984','野村一郎','123','0','0001','1','zhangsan@trans-cosmos.com.cn','1','7');
+insert into `user_tbl` (`USER_CODE`, `USER_NAME`, `USER_PWD`, `USER_SEX`, `DEPT_CODE`, `USER_STATUSINFOR`, `USER_EMAIL`, `USER_POSITION`, `USER_LEVEL`) values('2985','こにちわ','123','1','0003','1','939940939@qq.com','4','6');
+insert into `user_tbl` (`USER_CODE`, `USER_NAME`, `USER_PWD`, `USER_SEX`, `DEPT_CODE`, `USER_STATUSINFOR`, `USER_EMAIL`, `USER_POSITION`, `USER_LEVEL`) values('2986','をたしわ','123','0','0003','0','zhangsan@trans-cosmos.com.cn','3','5');
+insert into `user_tbl` (`USER_CODE`, `USER_NAME`, `USER_PWD`, `USER_SEX`, `DEPT_CODE`, `USER_STATUSINFOR`, `USER_EMAIL`, `USER_POSITION`, `USER_LEVEL`) values('2987','恥マイｍ','123','0','0003','0','939940939@qq.com','2','4');
+insert into `user_tbl` (`USER_CODE`, `USER_NAME`, `USER_PWD`, `USER_SEX`, `DEPT_CODE`, `USER_STATUSINFOR`, `USER_EMAIL`, `USER_POSITION`, `USER_LEVEL`) values('2988','かわい','123','0','0003','0','939940939@qq.com','1','3');
+insert into `user_tbl` (`USER_CODE`, `USER_NAME`, `USER_PWD`, `USER_SEX`, `DEPT_CODE`, `USER_STATUSINFOR`, `USER_EMAIL`, `USER_POSITION`, `USER_LEVEL`) values('2989','子に痴','123','1','0003','0','zhangsan@trans-cosmos.com.cn','4','2');
+insert into `user_tbl` (`USER_CODE`, `USER_NAME`, `USER_PWD`, `USER_SEX`, `DEPT_CODE`, `USER_STATUSINFOR`, `USER_EMAIL`, `USER_POSITION`, `USER_LEVEL`) values('2990','こあっぃ','123','0','0003','1','939940939@qq.com','3','8');
+insert into `user_tbl` (`USER_CODE`, `USER_NAME`, `USER_PWD`, `USER_SEX`, `DEPT_CODE`, `USER_STATUSINFOR`, `USER_EMAIL`, `USER_POSITION`, `USER_LEVEL`) values('3680','野村五郎','123','0','0002','1','939940939@qq.com','2','9');
+insert into `user_tbl` (`USER_CODE`, `USER_NAME`, `USER_PWD`, `USER_SEX`, `DEPT_CODE`, `USER_STATUSINFOR`, `USER_EMAIL`, `USER_POSITION`, `USER_LEVEL`) values('3760','野村三郎','123','0','0002','1','zhangsan@trans-cosmos.com.cn','1','10');
+insert into `user_tbl` (`USER_CODE`, `USER_NAME`, `USER_PWD`, `USER_SEX`, `DEPT_CODE`, `USER_STATUSINFOR`, `USER_EMAIL`, `USER_POSITION`, `USER_LEVEL`) values('4002','野村二郎','123','1','0001','1','939940939@qq.com','3','11');
+
+INSERT INTO WORK_DAILY_TBL VALUES ('00001','2984','0001','20160827','20160827','0','野村一郎','20160827');
+INSERT INTO WORK_DAILY_TBL VALUES ('00002','4002','0002','20160827','20160827','1','野村一郎','20160827');
+INSERT INTO WORK_DAILY_TBL VALUES ('00003','3760','0003','20160827','20160827','0','野村一郎','20160827');
+INSERT INTO WORK_DAILY_TBL VALUES ('00004','1024','0002','20160827','20160827','1','野村一郎','20160827');
+INSERT INTO WORK_DAILY_TBL VALUES ('00005','3680','0005','20160827','20160827','0','野村一郎','20160827');
+COMMIT;
+
+INSERT INTO WORK_DAILY_DETAIL_TBL VALUES ('A0001','00001','C11021','1','1','8','','');
+INSERT INTO WORK_DAILY_DETAIL_TBL VALUES ('A0002','00002','C11021','2','1','8','17:30','');
+INSERT INTO WORK_DAILY_DETAIL_TBL VALUES ('A0003','00003','C11021','3','1','8','17:30','');
+INSERT INTO WORK_DAILY_DETAIL_TBL VALUES ('A0004','00004','C11021','4','2','8','17:30','');
+INSERT INTO WORK_DAILY_DETAIL_TBL VALUES ('A0005','00005','C11021','2','4','8','17:30','');
+COMMIT;
+
+insert into project_query_tbl values ('1','A12033', 'ITF社向けECM文書統合管理システム再構築（日本）', '1', '暇海購营業部0', '项目担当a0', 'ISO担当a0', '项目内容a0', '项目规模小', 'win 10 操作系统', 'eclips', '2016-10-14', '2016-11-20', '2016-11-20', '开始通知a', '中断通知单a', '重开通知单a', '结束通知单a', '合同编号a', 'cd-r编号a', '提交状态a', '开始编号a', '客户名a', 'charge-a', '电话a', '传真a', '邮件a', '项目发出部门1', '录入者a', '2016-10-14', '确认人a', 'ITO 事业三部_系统开发二部1', '2016-10-14', '1', '合同名称a', '备注a', '1', '1', '历史接受部门1', '关键字a', '数据库a', '1', '1', '1', '1');
+insert into project_query_tbl values ('2','A22033', 'ITF社向けECM文書統合管理システム再構築（日本）1', '2', '暇海購营業部1', '项目担当a1', 'ISO担当a1', '项目内容a1', '项目规模小', 'win 10 操作系统', 'eclips', '2016-10-14', '2016-11-20', '2016-11-20', '开始通知a', '中断通知单a', '重开通知单a', '结束通知单a', '合同编号a', 'cd-r编号a', '提交状态a', '开始编号a', '客户名a', 'charge-a', '电话a', '传真a', '邮件a', '项目发出部门2', '录入者a', '2016-10-14', '确认人a', 'ITO 事业三部_系统开发二部2', '2016-10-14', '2', '合同名称a', '备注a', '2', '2', '历史接受部门2', '关键字a', '数据库a', '2', '2', '2', '2');
+insert into project_query_tbl values ('3','A32033', 'ITF社向けECM文書統合管理システム再構築（日本）2', '3', '暇海購营業部2', '项目担当a2', 'ISO担当a2', '项目内容a2', '项目规模小', 'win 10 操作系统', 'eclips', '2016-10-14', '2016-11-20', '2016-11-20', '开始通知a', '中断通知单a', '重开通知单a', '结束通知单a', '合同编号a', 'cd-r编号a', '提交状态a', '开始编号a', '客户名a', 'charge-a', '电话a', '传真a', '邮件a', '项目发出部门3', '录入者a', '2016-10-14', '确认人a', 'ITO 事业三部_系统开发二部3', '2016-10-14', '3', '合同名称a', '备注a', '3', '3', '历史接受部门3', '关键字a', '数据库a', '3', '3', '3', '3');
+insert into project_query_tbl values ('4','A42033', 'ITF社向けECM文書統合管理システム再構築（日本）3', '4', '暇海購营業部3', '项目担当a3', 'ISO担当a3', '项目内容a3', '项目规模小', 'win 10 操作系统', 'eclips', '2016-10-14', '2016-11-20', '2016-11-20', '开始通知a', '中断通知单a', '重开通知单a', '结束通知单a', '合同编号a', 'cd-r编号a', '提交状态a', '开始编号a', '客户名a', 'charge-a', '电话a', '传真a', '邮件a', '项目发出部门4', '录入者a', '2016-10-14', '确认人a', 'ITO 事业三部_系统开发二部4', '2016-10-14', '4', '合同名称a', '备注a', '4', '4', '历史接受部门4', '关键字a', '数据库a', '4', '4', '4', '4');
+insert into project_query_tbl values ('5','A52033', 'ITF社向けECM文書統合管理システム再構築（日本）4', '5', '暇海購营業部4', '项目担当a4', 'ISO担当a4', '项目内容a4', '项目规模小', 'win 10 操作系统', 'eclips', '2016-10-14', '2016-11-20', '2016-11-20', '开始通知a', '中断通知单a', '重开通知单a', '结束通知单a', '合同编号a', 'cd-r编号a', '提交状态a', '开始编号a', '客户名a', 'charge-a', '电话a', '传真a', '邮件a', '项目发出部门5', '录入者a', '2016-10-14', '确认人a', 'ITO 事业三部_系统开发二部5', '2016-10-14', '5', '合同名称a', '备注a', '5', '5', '历史接受部门5', '关键字a', '数据库a', '5', '5', '5', '5');
+insert into project_query_tbl values ('6','A62033', 'ITF社向けECM文書統合管理システム再構築（日本）5', '6', '暇海購营業部5', '项目担当a5', 'ISO担当a5', '项目内容a5', '项目规模小', 'win 10 操作系统', 'eclips', '2016-10-14', '2016-11-20', '2016-11-20', '开始通知a', '中断通知单a', '重开通知单a', '结束通知单a', '合同编号a', 'cd-r编号a', '提交状态a', '开始编号a', '客户名a', 'charge-a', '电话a', '传真a', '邮件a', '项目发出部门6', '录入者a', '2016-10-14', '确认人a', 'ITO 事业三部_系统开发二部6', '2016-10-14', '6', '合同名称a', '备注a', '6', '6', '历史接受部门6', '关键字a', '数据库a', '6', '6', '6', '6');
+insert into project_query_tbl values ('7','A72033', 'ITF社向けECM文書統合管理システム再構築（日本）6', '7', '暇海購营業部6', '项目担当a6', 'ISO担当a6', '项目内容a6', '项目规模小', 'win 10 操作系统', 'eclips', '2016-10-14', '2016-11-20', '2016-11-20', '开始通知a', '中断通知单a', '重开通知单a', '结束通知单a', '合同编号a', 'cd-r编号a', '提交状态a', '开始编号a', '客户名a', 'charge-a', '电话a', '传真a', '邮件a', '项目发出部门7', '录入者a', '2016-10-14', '确认人a', 'ITO 事业三部_系统开发二部7', '2016-10-14', '7', '合同名称a', '备注a', '7', '7', '历史接受部门7', '关键字a', '数据库a', '7', '7', '7', '7');
+insert into project_query_tbl values ('8','A82033', 'ITF社向けECM文書統合管理システム再構築（日本）7', '8', '暇海購营業部7', '项目担当a7', 'ISO担当a7', '项目内容a7', '项目规模小', 'win 10 操作系统', 'eclips', '2016-10-14', '2016-11-20', '2016-11-20', '开始通知a', '中断通知单a', '重开通知单a', '结束通知单a', '合同编号a', 'cd-r编号a', '提交状态a', '开始编号a', '客户名a', 'charge-a', '电话a', '传真a', '邮件a', '项目发出部门8', '录入者a', '2016-10-14', '确认人a', 'ITO 事业三部_系统开发二部8', '2016-10-14', '8', '合同名称a', '备注a', '8', '8', '历史接受部门8', '关键字a', '数据库a', '8', '8', '8', '8');
+insert into project_query_tbl values ('9','A92033', 'ITF社向けECM文書統合管理システム再構築（日本）8', '9', '暇海購营業部8', '项目担当a8', 'ISO担当a8', '项目内容a8', '项目规模小', 'win 10 操作系统', 'eclips', '2016-10-14', '2016-11-20', '2016-11-20', '开始通知a', '中断通知单a', '重开通知单a', '结束通知单a', '合同编号a', 'cd-r编号a', '提交状态a', '开始编号a', '客户名a', 'charge-a', '电话a', '传真a', '邮件a', '项目发出部门9', '录入者a', '2016-10-14', '确认人a', 'ITO 事业三部_系统开发二部9', '2016-10-14', '9', '合同名称a', '备注a', '9', '9', '历史接受部门9', '关键字a', '数据库a', '9', '9', '9', '9');
+insert into project_query_tbl values ('10','A10033', 'ITF社向けECM文書統合管理システム再構築（日本）9', '0', '暇海購营業部9', '项目担当a9', 'ISO担当a9', '项目内容a9', '项目规模小', 'win 10 操作系统', 'eclips', '2016-10-14', '2016-11-20', '2016-11-20', '开始通知a', '中断通知单a', '重开通知单a', '结束通知单a', '合同编号a', 'cd-r编号a', '提交状态a', '开始编号a', '客户名a', 'charge-a', '电话a', '传真a', '邮件a', '项目发出部门0', '录入者a', '2016-10-14', '确认人a', 'ITO 事业三部_系统开发二部0', '2016-10-14', '0', '合同名称a', '备注a', '0', '0', '历史接受部门0', '关键字a', '数据库a', '0', '0', '0', '0');
+COMMIT;
